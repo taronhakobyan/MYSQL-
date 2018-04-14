@@ -226,7 +226,7 @@ INNER JOIN (
 			USING (city_id)) AS f
 USING (country_id);
 
-/* 7h. List the top five genres in gross revenue in descending order. (Hint: you may need to use the following tables: category, film_category, inventory, payment, and rental.) */
+/* 7h. List the top five genres in gross revenue in descending order.*/
 SELECT * FROM category;
 SELECT * FROM film_category;
 SELECT * FROM inventory;
