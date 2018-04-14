@@ -35,12 +35,12 @@ DESCRIBE actor;
 
 /* 3b. You realize that some of these actors have tremendously long last names. Change the data type of the middle_name column to blobs. */
 ALTER TABLE actor
-CHANGE middle blobs VARCHAR(50);
+CHANGE middle middle blob;
 DESCRIBE actor;
 
 /* 3c. Now delete the middle_name column.*/
 ALTER TABLE actor
-DROP blobs;
+DROP middle;
 DESCRIBE actor;
 
 /* 4a. List the last names of actors, as well as how many actors have that last name.*/
