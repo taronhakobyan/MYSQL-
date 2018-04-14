@@ -73,7 +73,7 @@ WHERE first_name = 'GROUCHO';
 
 SELECT * 
 FROM actor
-WHERE actor_id = (	SELECT actor_id
+WHERE actor_id = (SELECT actor_id
 					FROM actor
 					WHERE first_name = 'GROUCHO' AND last_name = 'WILLIAMS'
 					);
